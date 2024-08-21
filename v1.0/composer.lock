@@ -1,0 +1,123 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "cd1cb0966367e59f4fe46177012901f6",
+    "packages": [
+        {
+            "name": "php-edifact/edifact-mapping",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-edifact/edifact-mapping.git",
+                "reference": "f3df7c2d6a1f45df09ed9b5aaff1070e87a2b57f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-edifact/edifact-mapping/zipball/f3df7c2d6a1f45df09ed9b5aaff1070e87a2b57f",
+                "reference": "f3df7c2d6a1f45df09ed9b5aaff1070e87a2b57f",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EDI\\Mapping\\": "src/Mapping/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "description": "XML mappings from UNTDID",
+            "homepage": "https://github.com/php-edifact/edifact-mapping",
+            "keywords": [
+                "UNECE",
+                "edi",
+                "edifact",
+                "mapping",
+                "message"
+            ],
+            "support": {
+                "issues": "https://github.com/php-edifact/edifact-mapping/issues",
+                "source": "https://github.com/php-edifact/edifact-mapping/tree/0.5.0"
+            },
+            "time": "2023-02-20T22:46:29+00:00"
+        },
+        {
+            "name": "sabas/edifact",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-edifact/edifact.git",
+                "reference": "e54c693b3dc68397d49a3893f9b3ee7734f76625"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-edifact/edifact/zipball/e54c693b3dc68397d49a3893f9b3ee7734f76625",
+                "reference": "e54c693b3dc68397d49a3893f9b3ee7734f76625",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "php": "~8"
+            },
+            "require-dev": {
+                "php-edifact/edifact-mapping": "dev-master",
+                "phpunit/phpunit": "~9.0",
+                "symplify/easy-coding-standard": "^12.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EDI\\": "src/EDI/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Stefano Sabatini",
+                    "email": "sabas88@gmail.com",
+                    "homepage": "http://stefanosabatini.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Uldis Nelsons",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Emil Vikström",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools in PHP for UN/EDIFACT",
+            "homepage": "https://github.com/php-edifact/edifact",
+            "keywords": [
+                "container",
+                "edi",
+                "edifact",
+                "message"
+            ],
+            "support": {
+                "issues": "https://github.com/php-edifact/edifact/issues",
+                "source": "https://github.com/php-edifact/edifact/tree/1.1.0"
+            },
+            "time": "2024-05-21T08:21:52+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

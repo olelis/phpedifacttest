@@ -1,0 +1,692 @@
+{
+    "errors": [
+        {
+            "text": "The message has some additional segments beyond the maximum repetition allowed (skipped)",
+            "position": 8,
+            "segmentId": "NAD"
+        },
+        {
+            "text": "The message has some additional segments beyond the maximum repetition allowed (skipped)",
+            "position": 9,
+            "segmentId": "NAD"
+        }
+    ],
+    "groups": [
+        {
+            "messageHeader": {
+                "segmentIdx": 0,
+                "segmentCode": "UNH",
+                "segmentGroup": "",
+                "messageReferenceNumber": "1",
+                "messageIdentifier": {
+                    "messageType": "ORDERS",
+                    "messageVersionNumber": "D",
+                    "messageReleaseNumber": "96A",
+                    "controllingAgency": "UN"
+                }
+            },
+            "beginningOfMessage": {
+                "segmentIdx": 1,
+                "segmentCode": "BGM",
+                "segmentGroup": "",
+                "documentmessageName": {
+                    "documentmessageNameCoded": "220"
+                },
+                "documentmessageNumber": "2738662",
+                "messageFunctionCoded": "9"
+            },
+            "datetimeperiod": {
+                "segmentIdx": 2,
+                "segmentCode": "DTM",
+                "segmentGroup": "",
+                "datetimeperiod": {
+                    "datetimeperiodQualifier": "137",
+                    "datetimeperiod": "20200304",
+                    "datetimeperiodFormatQualifier": "102"
+                }
+            },
+            "SG1": [
+                {
+                    "reference": {
+                        "segmentIdx": 3,
+                        "segmentCode": "RFF",
+                        "segmentGroup": "SG1",
+                        "reference": {
+                            "referenceQualifier": "ON",
+                            "referenceNumber": "2738662"
+                        }
+                    }
+                }
+            ],
+            "SG2": [
+                {
+                    "nameAndAddress": {
+                        "segmentIdx": 4,
+                        "segmentCode": "NAD",
+                        "segmentGroup": "SG2",
+                        "partyQualifier": "BY",
+                        "partyIdentificationDetails": {
+                            "partyIdIdentification": "8716106198368",
+                            "codeListQualifier": "",
+                            "codeListResponsibleAgencyCoded": "9"
+                        },
+                        "nameAndAddress": "",
+                        "partyName": {
+                            "partyName": "Kramp Groep BV 07"
+                        },
+                        "street": {
+                            "streetAndNumberpoBox": "Zone Republique Iii"
+                        },
+                        "cityName": "Poitiers Cedex",
+                        "countrySubentityIdentification": "",
+                        "postcodeIdentification": "86000",
+                        "countryCoded": "FR"
+                    },
+                    "SG5": [
+                        {
+                            "contactInformation": {
+                                "segmentIdx": 5,
+                                "segmentCode": "CTA",
+                                "segmentGroup": "SG5",
+                                "contactFunctionCoded": "OC",
+                                "departmentOrEmployeeDetails": {
+                                    "departmentOrEmployeeIdentification": "",
+                                    "departmentOrEmployee": "Kramp Purchaser"
+                                }
+                            },
+                            "communicationContact": {
+                                "segmentIdx": 6,
+                                "segmentCode": "COM",
+                                "segmentGroup": "SG5",
+                                "communicationContact": {
+                                    "communicationNumber": "kramp.purchaser@kramp.com",
+                                    "communicationChannelQualifier": "EM"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "nameAndAddress": {
+                        "segmentIdx": 7,
+                        "segmentCode": "NAD",
+                        "segmentGroup": "",
+                        "partyQualifier": "SU",
+                        "partyIdentificationDetails": {
+                            "partyIdIdentification": "8712199999999",
+                            "codeListQualifier": "",
+                            "codeListResponsibleAgencyCoded": "9"
+                        },
+                        "nameAndAddress": "",
+                        "partyName": {
+                            "partyName": "Supplier Name"
+                        },
+                        "street": {
+                            "streetAndNumberpoBox": "Supplier Street"
+                        },
+                        "cityName": "SuppliCity",
+                        "countrySubentityIdentification": "",
+                        "postcodeIdentification": "Postalcode"
+                    }
+                }
+            ],
+            "SG7": [
+                {
+                    "currencies": {
+                        "segmentIdx": 10,
+                        "segmentCode": "CUX",
+                        "segmentGroup": "SG7",
+                        "currencyDetails": {
+                            "currencyDetailsQualifier": "2",
+                            "currencyCoded": "EUR",
+                            "currencyQualifier": "9"
+                        }
+                    }
+                }
+            ],
+            "SG25": [
+                {
+                    "lineItem": {
+                        "segmentIdx": 11,
+                        "segmentCode": "LIN",
+                        "segmentGroup": "SG25",
+                        "lineItemNumber": "10",
+                        "actionRequestnotificationCoded": "",
+                        "itemNumberIdentification": {
+                            "itemNumber": "8712100000003",
+                            "itemNumberTypeCoded": "EN"
+                        }
+                    },
+                    "additionalProductId": [
+                        {
+                            "segmentIdx": 12,
+                            "segmentCode": "PIA",
+                            "segmentGroup": "SG25",
+                            "productIdFunctionQualifier": "5",
+                            "itemNumberIdentification": {
+                                "itemNumber": "ABC1234",
+                                "itemNumberTypeCoded": "SA"
+                            }
+                        },
+                        {
+                            "segmentIdx": 13,
+                            "segmentCode": "PIA",
+                            "segmentGroup": "SG25",
+                            "productIdFunctionQualifier": "5",
+                            "itemNumberIdentification": {
+                                "itemNumber": "DEF345",
+                                "itemNumberTypeCoded": "IN"
+                            }
+                        }
+                    ],
+                    "itemDescription": {
+                        "segmentIdx": 14,
+                        "segmentCode": "IMD",
+                        "segmentGroup": "SG25",
+                        "itemDescriptionTypeCoded": "F",
+                        "itemCharacteristicCoded": "",
+                        "itemDescription": {
+                            "itemDescriptionIdentification": "",
+                            "codeListQualifier": "",
+                            "codeListResponsibleAgencyCoded": "",
+                            "itemDescription": "Product description 1"
+                        }
+                    },
+                    "quantity": {
+                        "segmentIdx": 15,
+                        "segmentCode": "QTY",
+                        "segmentGroup": "SG25",
+                        "quantityDetails": {
+                            "quantityQualifier": "21",
+                            "quantity": "2",
+                            "measureUnitQualifier": "EA"
+                        }
+                    },
+                    "datetimeperiod": {
+                        "segmentIdx": 16,
+                        "segmentCode": "DTM",
+                        "segmentGroup": "SG25",
+                        "datetimeperiod": {
+                            "datetimeperiodQualifier": "2",
+                            "datetimeperiod": "20200311",
+                            "datetimeperiodFormatQualifier": "102"
+                        }
+                    },
+                    "monetaryAmount": {
+                        "segmentIdx": 17,
+                        "segmentCode": "MOA",
+                        "segmentGroup": "SG25",
+                        "monetaryAmount": {
+                            "monetaryAmountTypeQualifier": "203",
+                            "monetaryAmount": "200.44"
+                        }
+                    },
+                    "SG28": [
+                        {
+                            "priceDetails": {
+                                "segmentIdx": 18,
+                                "segmentCode": "PRI",
+                                "segmentGroup": "SG28",
+                                "priceInformation": {
+                                    "priceQualifier": "AAA",
+                                    "price": "33.41",
+                                    "priceTypeCoded": "",
+                                    "priceTypeQualifier": "",
+                                    "unitPriceBasis": "1",
+                                    "measureUnitQualifier": "PCE"
+                                }
+                            }
+                        },
+                        {
+                            "priceDetails": {
+                                "segmentIdx": 19,
+                                "segmentCode": "PRI",
+                                "segmentGroup": "SG28",
+                                "priceInformation": {
+                                    "priceQualifier": "AAB",
+                                    "price": "41",
+                                    "priceTypeCoded": "",
+                                    "priceTypeQualifier": "",
+                                    "unitPriceBasis": "1",
+                                    "measureUnitQualifier": "PCE"
+                                }
+                            }
+                        }
+                    ],
+                    "SG39": [
+                        {
+                            "allowanceOrCharge": {
+                                "segmentIdx": 20,
+                                "segmentCode": "ALC",
+                                "segmentGroup": "SG39",
+                                "allowanceOrChargeQualifier": "A"
+                            },
+                            "SG41": [
+                                {
+                                    "percentageDetails": {
+                                        "segmentIdx": 21,
+                                        "segmentCode": "PCD",
+                                        "segmentGroup": "SG41",
+                                        "percentageDetails": {
+                                            "percentageQualifier": "12",
+                                            "percentage": "16",
+                                            "percentageBasisCoded": "1"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allowanceOrCharge": {
+                                "segmentIdx": 22,
+                                "segmentCode": "ALC",
+                                "segmentGroup": "",
+                                "allowanceOrChargeQualifier": "A"
+                            },
+                            "SG41": [
+                                {
+                                    "percentageDetails": {
+                                        "segmentIdx": 23,
+                                        "segmentCode": "PCD",
+                                        "segmentGroup": "SG41",
+                                        "percentageDetails": {
+                                            "percentageQualifier": "12",
+                                            "percentage": "3",
+                                            "percentageBasisCoded": "1"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "lineItem": {
+                        "segmentIdx": 24,
+                        "segmentCode": "LIN",
+                        "segmentGroup": "",
+                        "lineItemNumber": "15",
+                        "actionRequestnotificationCoded": "",
+                        "itemNumberIdentification": {
+                            "itemNumber": "8712100000010",
+                            "itemNumberTypeCoded": "EN"
+                        }
+                    },
+                    "additionalProductId": [
+                        {
+                            "segmentIdx": 25,
+                            "segmentCode": "PIA",
+                            "segmentGroup": "",
+                            "productIdFunctionQualifier": "5",
+                            "itemNumberIdentification": {
+                                "itemNumber": "AB80",
+                                "itemNumberTypeCoded": "SA"
+                            }
+                        },
+                        {
+                            "segmentIdx": 26,
+                            "segmentCode": "PIA",
+                            "segmentGroup": "",
+                            "productIdFunctionQualifier": "5",
+                            "itemNumberIdentification": {
+                                "itemNumber": "DE80",
+                                "itemNumberTypeCoded": "IN"
+                            }
+                        }
+                    ],
+                    "itemDescription": {
+                        "segmentIdx": 27,
+                        "segmentCode": "IMD",
+                        "segmentGroup": "",
+                        "itemDescriptionTypeCoded": "F",
+                        "itemCharacteristicCoded": "",
+                        "itemDescription": {
+                            "itemDescriptionIdentification": "",
+                            "codeListQualifier": "",
+                            "codeListResponsibleAgencyCoded": "",
+                            "itemDescription": "Product description 2"
+                        }
+                    },
+                    "quantity": {
+                        "segmentIdx": 28,
+                        "segmentCode": "QTY",
+                        "segmentGroup": "",
+                        "quantityDetails": {
+                            "quantityQualifier": "21",
+                            "quantity": "6",
+                            "measureUnitQualifier": "EA"
+                        }
+                    },
+                    "datetimeperiod": {
+                        "segmentIdx": 29,
+                        "segmentCode": "DTM",
+                        "segmentGroup": "",
+                        "datetimeperiod": {
+                            "datetimeperiodQualifier": "2",
+                            "datetimeperiod": "20200311",
+                            "datetimeperiodFormatQualifier": "102"
+                        }
+                    },
+                    "monetaryAmount": {
+                        "segmentIdx": 30,
+                        "segmentCode": "MOA",
+                        "segmentGroup": "",
+                        "monetaryAmount": {
+                            "monetaryAmountTypeQualifier": "203",
+                            "monetaryAmount": "152.76"
+                        }
+                    },
+                    "SG28": [
+                        {
+                            "priceDetails": {
+                                "segmentIdx": 31,
+                                "segmentCode": "PRI",
+                                "segmentGroup": "SG28",
+                                "priceInformation": {
+                                    "priceQualifier": "AAA",
+                                    "price": "152.76",
+                                    "priceTypeCoded": "",
+                                    "priceTypeQualifier": "",
+                                    "unitPriceBasis": "1",
+                                    "measureUnitQualifier": "PCE"
+                                }
+                            }
+                        },
+                        {
+                            "priceDetails": {
+                                "segmentIdx": 32,
+                                "segmentCode": "PRI",
+                                "segmentGroup": "SG28",
+                                "priceInformation": {
+                                    "priceQualifier": "AAB",
+                                    "price": "152.76",
+                                    "priceTypeCoded": "",
+                                    "priceTypeQualifier": "",
+                                    "unitPriceBasis": "1",
+                                    "measureUnitQualifier": "PCE"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "lineItem": {
+                        "segmentIdx": 33,
+                        "segmentCode": "LIN",
+                        "segmentGroup": "",
+                        "lineItemNumber": "20",
+                        "actionRequestnotificationCoded": "",
+                        "itemNumberIdentification": {
+                            "itemNumber": "8712100000027",
+                            "itemNumberTypeCoded": "EN"
+                        }
+                    },
+                    "additionalProductId": [
+                        {
+                            "segmentIdx": 34,
+                            "segmentCode": "PIA",
+                            "segmentGroup": "",
+                            "productIdFunctionQualifier": "5",
+                            "itemNumberIdentification": {
+                                "itemNumber": "CD90",
+                                "itemNumberTypeCoded": "SA"
+                            }
+                        },
+                        {
+                            "segmentIdx": 35,
+                            "segmentCode": "PIA",
+                            "segmentGroup": "",
+                            "productIdFunctionQualifier": "5",
+                            "itemNumberIdentification": {
+                                "itemNumber": "EF90",
+                                "itemNumberTypeCoded": "IN"
+                            }
+                        }
+                    ],
+                    "itemDescription": {
+                        "segmentIdx": 36,
+                        "segmentCode": "IMD",
+                        "segmentGroup": "",
+                        "itemDescriptionTypeCoded": "F",
+                        "itemCharacteristicCoded": "",
+                        "itemDescription": {
+                            "itemDescriptionIdentification": "",
+                            "codeListQualifier": "",
+                            "codeListResponsibleAgencyCoded": "",
+                            "itemDescription": "Product description 3"
+                        }
+                    },
+                    "quantity": {
+                        "segmentIdx": 37,
+                        "segmentCode": "QTY",
+                        "segmentGroup": "",
+                        "quantityDetails": {
+                            "quantityQualifier": "21",
+                            "quantity": "2",
+                            "measureUnitQualifier": "EA"
+                        }
+                    },
+                    "datetimeperiod": {
+                        "segmentIdx": 38,
+                        "segmentCode": "DTM",
+                        "segmentGroup": "",
+                        "datetimeperiod": {
+                            "datetimeperiodQualifier": "2",
+                            "datetimeperiod": "20200311",
+                            "datetimeperiodFormatQualifier": "102"
+                        }
+                    },
+                    "monetaryAmount": {
+                        "segmentIdx": 39,
+                        "segmentCode": "MOA",
+                        "segmentGroup": "",
+                        "monetaryAmount": {
+                            "monetaryAmountTypeQualifier": "203",
+                            "monetaryAmount": "66.2"
+                        }
+                    },
+                    "SG28": [
+                        {
+                            "priceDetails": {
+                                "segmentIdx": 40,
+                                "segmentCode": "PRI",
+                                "segmentGroup": "SG28",
+                                "priceInformation": {
+                                    "priceQualifier": "AAA",
+                                    "price": "66.2",
+                                    "priceTypeCoded": "",
+                                    "priceTypeQualifier": "",
+                                    "unitPriceBasis": "1",
+                                    "measureUnitQualifier": "PCE"
+                                }
+                            }
+                        },
+                        {
+                            "priceDetails": {
+                                "segmentIdx": 41,
+                                "segmentCode": "PRI",
+                                "segmentGroup": "SG28",
+                                "priceInformation": {
+                                    "priceQualifier": "AAB",
+                                    "price": "66.2",
+                                    "priceTypeCoded": "",
+                                    "priceTypeQualifier": "",
+                                    "unitPriceBasis": "1",
+                                    "measureUnitQualifier": "PCE"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "lineItem": {
+                        "segmentIdx": 42,
+                        "segmentCode": "LIN",
+                        "segmentGroup": "",
+                        "lineItemNumber": "25",
+                        "actionRequestnotificationCoded": "",
+                        "itemNumberIdentification": {
+                            "itemNumber": "8712100000034",
+                            "itemNumberTypeCoded": "EN"
+                        }
+                    },
+                    "additionalProductId": [
+                        {
+                            "segmentIdx": 43,
+                            "segmentCode": "PIA",
+                            "segmentGroup": "",
+                            "productIdFunctionQualifier": "5",
+                            "itemNumberIdentification": {
+                                "itemNumber": "ABC-D-BL",
+                                "itemNumberTypeCoded": "SA"
+                            }
+                        },
+                        {
+                            "segmentIdx": 44,
+                            "segmentCode": "PIA",
+                            "segmentGroup": "",
+                            "productIdFunctionQualifier": "5",
+                            "itemNumberIdentification": {
+                                "itemNumber": "ABCDBL",
+                                "itemNumberTypeCoded": "IN"
+                            }
+                        }
+                    ],
+                    "itemDescription": {
+                        "segmentIdx": 45,
+                        "segmentCode": "IMD",
+                        "segmentGroup": "",
+                        "itemDescriptionTypeCoded": "F",
+                        "itemCharacteristicCoded": "",
+                        "itemDescription": {
+                            "itemDescriptionIdentification": "",
+                            "codeListQualifier": "",
+                            "codeListResponsibleAgencyCoded": "",
+                            "itemDescription": "Product description 4"
+                        }
+                    },
+                    "quantity": {
+                        "segmentIdx": 46,
+                        "segmentCode": "QTY",
+                        "segmentGroup": "",
+                        "quantityDetails": {
+                            "quantityQualifier": "21",
+                            "quantity": "7",
+                            "measureUnitQualifier": "EA"
+                        }
+                    },
+                    "datetimeperiod": {
+                        "segmentIdx": 47,
+                        "segmentCode": "DTM",
+                        "segmentGroup": "",
+                        "datetimeperiod": {
+                            "datetimeperiodQualifier": "2",
+                            "datetimeperiod": "20200311",
+                            "datetimeperiodFormatQualifier": "102"
+                        }
+                    },
+                    "monetaryAmount": {
+                        "segmentIdx": 48,
+                        "segmentCode": "MOA",
+                        "segmentGroup": "",
+                        "monetaryAmount": {
+                            "monetaryAmountTypeQualifier": "203",
+                            "monetaryAmount": "321.56"
+                        }
+                    },
+                    "SG28": [
+                        {
+                            "priceDetails": {
+                                "segmentIdx": 49,
+                                "segmentCode": "PRI",
+                                "segmentGroup": "SG28",
+                                "priceInformation": {
+                                    "priceQualifier": "AAA",
+                                    "price": "10.72",
+                                    "priceTypeCoded": "",
+                                    "priceTypeQualifier": "",
+                                    "unitPriceBasis": "1",
+                                    "measureUnitQualifier": "PCE"
+                                }
+                            }
+                        },
+                        {
+                            "priceDetails": {
+                                "segmentIdx": 50,
+                                "segmentCode": "PRI",
+                                "segmentGroup": "SG28",
+                                "priceInformation": {
+                                    "priceQualifier": "AAB",
+                                    "price": "17",
+                                    "priceTypeCoded": "",
+                                    "priceTypeQualifier": "",
+                                    "unitPriceBasis": "1",
+                                    "measureUnitQualifier": "PCE"
+                                }
+                            }
+                        }
+                    ],
+                    "SG39": [
+                        {
+                            "allowanceOrCharge": {
+                                "segmentIdx": 51,
+                                "segmentCode": "ALC",
+                                "segmentGroup": "SG39",
+                                "allowanceOrChargeQualifier": "A"
+                            },
+                            "SG41": [
+                                {
+                                    "percentageDetails": {
+                                        "segmentIdx": 52,
+                                        "segmentCode": "PCD",
+                                        "segmentGroup": "SG41",
+                                        "percentageDetails": {
+                                            "percentageQualifier": "12",
+                                            "percentage": "35",
+                                            "percentageBasisCoded": "1"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allowanceOrCharge": {
+                                "segmentIdx": 53,
+                                "segmentCode": "ALC",
+                                "segmentGroup": "",
+                                "allowanceOrChargeQualifier": "A"
+                            },
+                            "SG41": [
+                                {
+                                    "percentageDetails": {
+                                        "segmentIdx": 54,
+                                        "segmentCode": "PCD",
+                                        "segmentGroup": "SG41",
+                                        "percentageDetails": {
+                                            "percentageQualifier": "12",
+                                            "percentage": "3",
+                                            "percentageBasisCoded": "1"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "sectionControl": {
+                "segmentIdx": 55,
+                "segmentCode": "UNS",
+                "segmentGroup": "",
+                "sectionIdentification": "S"
+            },
+            "messageTrailer": {
+                "segmentIdx": 56,
+                "segmentCode": "UNT",
+                "segmentGroup": "",
+                "numberOfSegmentsInTheMessage": "45",
+                "messageReferenceNumber": "1"
+            }
+        }
+    ]
+}
