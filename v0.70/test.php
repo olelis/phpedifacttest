@@ -7,6 +7,8 @@ use EDI\Parser;
 
 require 'vendor/autoload.php';
 
+
+
 $data = parseString('editest.txt');
 
 file_put_contents('editest.json', json_encode($data, JSON_INVALID_UTF8_SUBSTITUTE | JSON_PRETTY_PRINT));
